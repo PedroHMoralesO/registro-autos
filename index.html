@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Veiculos</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header> 
+        <h1>REGISTRO DE AUTOS</h1> 
+    </header>
+    <section class="hero">
+        <section class="instrucciones">
+            <h2>Bienbenidos al registro publico de autos</h2>
+            <h3>Para registrar tus autos por favor introduce cuantos autos registraras, <br> presiona el boton de registro e ingresa los datos que se te piden</h3>
+        </section>
+        <div class="registro">
+            <label for="cars">Numero de Autos a Registrar</label>
+            <input type="text" id="cars" placeholder="0">
+            <br>
+            <br>
+            <button id="boton1" type="submit">REGISTRO</button>
+        </div>
+        <div class="info">
+            <h3 id="resultado2">Tus IDs son:</h3>
+            <h3 id="resultado1">Aqui apareceran los IDs de registro de tus autos</h3>
+        </div>
+        <div class="consulta">
+            <label for="search">ingresa el ID a consultar</label>
+            <input type="text" id="search" placeholder="ID">
+            <br>
+            <br>
+            <button id="boton2" type="submit">CONSULTA</button>
+        </div>
+    </section>
+    <footer class="pieDePagina">
+        <h4>Diseñada por PedroDelMaL</h4> 
+    </footer>
+    <script src="registro.js"></script>
+</body>
+</html>
