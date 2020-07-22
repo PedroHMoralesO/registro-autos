@@ -24,7 +24,7 @@ function automata(autos){
         identificador[i-1] = new auto(dato1, dato2, dato3, dato4, dato5);
         console.log(identificador[i-1]);
         ids=String(i);
-        ids2=ids2+" "+ids;
+        ids2=ids2+"  "+ids + " , ";
     }
     document.getElementById('resultado1').innerHTML=ids2;
 } 
@@ -33,7 +33,7 @@ function automata(autos){
 function auto(marca, modelo, color, annio, placas){
     this.marca = marca;
     this.modelo = modelo;
-    this.modelo = color;
+    this.color = color;
     this.annio = annio;
     this.placas = placas;
 }
@@ -44,6 +44,6 @@ function request(){
     if(ids2===" "){
         document.getElementById('resultado1').innerHTML=" No hay registros, por favor registra primero tus automoviles "; 
     } else{
-        document.getElementById('resultado1').innerHTML= identificador[temporal-1].marca + " " + identificador[temporal-1].modelo + " " + identificador[temporal-1].annio + " " + identificador[temporal-1].placas;
+        document.getElementById('resultado1').innerHTML= "MARCA: " + identificador[temporal-1].marca + " , MODELO: " + identificador[temporal-1].modelo + " , AÑO: " + identificador[temporal-1].annio + " , COLOR: " + identificador[temporal-1].color + " , PLACAS: " + identificador[temporal-1].placas;
     }
 }

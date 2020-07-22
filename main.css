@@ -19,14 +19,20 @@ header{
     background-color: rgb(230, 230, 230);
     color: rgb(15, 15, 15);
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px 150px 1fr;
     justify-content: center;
     text-align: center;
 }
 
 
 .pieDePagina{
+    display: flex;
+    justify-content: space-between;
     background-color: cadetblue;
     color: rgb(230, 230, 230);
-    padding: 25px 0;
+    padding: 25px 10px;
+}
+
+.pieDePagina h3{
+    color: red;
 }
